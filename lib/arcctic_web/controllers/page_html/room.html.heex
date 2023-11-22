@@ -1,0 +1,9 @@
+<p>Currently in <strong><%= @room_id %></strong></p>
+<div id="chat-wrapper" class="border-2">
+    <div id="chat-messages">
+    </div>
+    <.simple_form :let={f} for={%{}} as={:chat} phx-submit="submit_message">
+    <.input type="text" field={f[:message]} placeholder="Type Here"/>	       
+    </.simple_form>
+  
+</div>

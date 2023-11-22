@@ -18,6 +18,7 @@ defmodule ArccticWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/rooms/:id", RoomController, :show
   end
 
   # Other scopes may use custom stacks.
